@@ -6,9 +6,7 @@ name: Deploy to GitHub pages
 on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
   push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+    branches: ['main']
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -24,9 +22,9 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
-      - name: Generate static VuePress files
-        uses: actions/setup-node@v2.5.2
+      - name: Generate static Website files
+        uses: actions/setup-node@v2
         with:
-          node-version: '18'
+          node-version: '16'
       - run: npm ci
       - run: npm run build
