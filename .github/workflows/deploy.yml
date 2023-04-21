@@ -24,7 +24,7 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
-      - name: Generate static VuePress files
+      - name: Generate static Website files
         uses: actions/setup-node@v2
         with:
           node-version: '16'
