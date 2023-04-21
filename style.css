@@ -42,9 +42,9 @@ body {
     opacity: 0;
 }
 
-.panel p {
+.panel a {
     position: absolute;
-    top: 35px;
+    top: 50px;
     left: 30px;
     opacity: 0;
 }
@@ -58,7 +58,7 @@ body {
     transition: opacity 0.3s ease-in 0.4s;
 }
 
-.panel.active p {
+.panel.active a {
     opacity: 1;
     transition: opacity 0.3s ease-in 0.4s;
 }
