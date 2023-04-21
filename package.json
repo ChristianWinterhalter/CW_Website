@@ -1,0 +1,19 @@
+{
+  "name": "cw_website",
+  "version": "1.0.0",
+  "description": "Christian Winterhalter's personnel website for experience, projects, and future endeavors.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChristianWinterhalter/CW_Website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChristianWinterhalter/CW_Website/issues"
+  },
+  "homepage": "https://github.com/ChristianWinterhalter/CW_Website#readme"
+}
