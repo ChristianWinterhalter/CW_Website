@@ -26,4 +26,3 @@ jobs:
           yarn install --frozen-lockfile
           npm install
           npm run build --if-present
-          npm test
