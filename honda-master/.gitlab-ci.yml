@@ -1,0 +1,17 @@
+image: node:12.0-slim
+
+stages:
+  - 📝publish
+
+pages:
+  stage: 📝publish
+  script:
+    - mkdir -p public
+    - cp -r ./source/index.html public
+    - cp -r ./source/js public
+    - cp -r ./source/css public
+    - cp -r ./source/img public
+
+  artifacts:
+    paths:
+      - public

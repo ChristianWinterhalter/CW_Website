@@ -17,15 +17,15 @@ body {
 
 .container {
     display: flex;
-    width: 90vw;
-    background: #333;
+    width: 100vw;
+    background: #000000;
 }
 
 .panel {
     background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
-    height: 80vh;
+    height: 100vh;
     border-radius: 50px;
     color: #fff;
     cursor: pointer;
