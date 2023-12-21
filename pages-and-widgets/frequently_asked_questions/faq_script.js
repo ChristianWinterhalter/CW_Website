@@ -1,17 +1,16 @@
-const boxes = document.querySelectorAll('.box')
+// Bring in toggle buttons (querySelectorAll)
+const faqs = document.querySelectorAll('.faq-toggle')
 
-window.addEventListener('scroll', checkBoxes)
+// Loop through nodeList (forEach)
+// Add Click event (addEventListener)
+// Toggle the active class on the parent node (.parentNode & classList.toggle())
+faqs.forEach(faqs => {
+    faqs.addEventListener('click', () => {
+        // if (faqs.classList.contains('active'))
+        //     faqs.parentNode.classList.remove('active')
+        // else
+        //     faqs.parentNode.classList.add('active')
 
-checkBoxes()
-
-function checkBoxes() {
-    const bottomTrigger = window.innerHeight / 5 * 4
-    boxes.forEach(box => {
-        const boxTop = box.getBoundingClientRect().top
-        if(boxTop < bottomTrigger) {
-            box.classList.add('show')
-        } else {
-            box.classList.remove('show')
-        }
+        faqs.parentNode.classList.toggle('active')
     })
-}
+})
