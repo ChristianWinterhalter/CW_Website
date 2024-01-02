@@ -77,3 +77,11 @@ body {
         display: none;
     }
 }
+
+.panel embed {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    border-radius: 25px;
+    
+}
