@@ -3,13 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="default_template_style.css">
-    <title>Default Template</title>
+    <link rel="stylesheet" href="theme_clock_style.css">
+    <title>Theme Click</title>
 </head>
 <body>
-    <div class="container">
-        <h3>Default container</h3>
+    <button class="toggle">Dark mode</button>
+    <div class="clock-container">
+        <div class="clock">
+            <div class="needle hour"></div>
+            <div class="needle minute"></div>
+            <div class="needle second"></div>
+            <div class="center-point"></div>
+        </div>
+        <div class="time">12:00</div>
+        <div class="date">Monday, Nov <span class="circle">5</span></div>
     </div>
-    <script src="default_template_script.js"></script>
+    <script src="theme_clock_script.js"></script>
 </body>
 </html>
