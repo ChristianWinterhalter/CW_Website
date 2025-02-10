@@ -13,7 +13,6 @@ body {
     height: 100vh;
     margin: 0;
     overflow-x: hidden;
-    background-image: url(../../images/japan1.jpg);
     background-position: center center;
     background-size: cover;
     transition: 0.4s ease;
