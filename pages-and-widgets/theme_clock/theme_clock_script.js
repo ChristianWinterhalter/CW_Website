@@ -19,6 +19,30 @@ e_toggle.addEventListener('click', (e) => {
     }
 })
 
-function toggleDarkMode() {
-    e_toggle.textContent = "Light Mode"
+function setTime() {
+    const time = new Date();
+    const month = time.getMonth()
+    const day = time.getDay()
+    const date = time.getDate()
+    const hours = time.getHours()
+    const hoursForClock = hours % 12
+    const minutes = time.getMinutes()
+    const seconds = time.getSeconds()
+    const ampm = hours >= 12 ? 'PM': 'AM'
+
+    e_hour.style.transform = `translate(-50%, -100%) rotate(${scale(hoursForClock, 0, 11, 0, 360)}deg)`
+    e_minute.style.transform = `translate(-50%, -100%) rotate(${scale(minutes, 0, 59, 0, 360)}deg)`
+    e_second.style.transform = `translate(-50%, -100%) rotate(${scale(seconds, 0, 59, 0, 360)}deg)`
+
+    e_time.innerHTML = `${hoursForClock}:${minutes < 10 ? `0${minutes}` : minutes} ${ampm}`
+    e_date.innerHTML = `${days[day]}, ${months[month]} <span class="circle">${date}</span>`
+    console.log(time)
+
 }
+
+const scale = (num, in_min, in_max, out_min, out_max) => {
+    return (num - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
+}
+
+setTime()
+setInterval(setTime, 1000)
